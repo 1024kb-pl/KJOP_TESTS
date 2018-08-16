@@ -25,4 +25,33 @@ public class Math {
     public static float calculateAverage(int[] numbers) {
         return Math.calculateSum(numbers) / (float) numbers.length;
     }
+
+    public static int findMin(int[] numbers) {
+        int min = Integer.MAX_VALUE;
+
+        for (int number : numbers) {
+            if (number < min) {
+                min = number;
+            }
+        }
+        return min;
+    }
+
+    public static int multiplyNumbers(int[] numbers) {
+        int result = 1;
+        for(int number : numbers) {
+            result *= number;
+        }
+        return result;
+    }
+
+    public static int factorial(int n) {
+        int result = 1;
+
+        for (int factor = 2; factor <= n; factor++) {
+            result *= factor;
+        }
+
+        return result;
+    }
 }

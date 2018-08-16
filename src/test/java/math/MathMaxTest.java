@@ -14,7 +14,7 @@ public class MathMaxTest {
         final int result = Math.findMax(numbers);
 
         //excepted
-        Assert.assertEquals(result, 101);
+        Assert.assertEquals(101, result);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class MathMaxTest {
         final int result = Math.findMax(numbers);
 
         //excepted
-        Assert.assertEquals(result, 15);
+        Assert.assertEquals(15, result);
     }
 }
